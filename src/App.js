@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FormFeaturesItems from './Form/FormFeaturesItems';
+import FormFeatures from './Form/FormFeatures';
 import SummaryCart from './Summary/SummaryCart';
 import FEATURES from './STORE'
 import './App.css'
@@ -42,7 +42,7 @@ class App extends Component {
           <h1>ELF Computing | Laptops</h1>
         </header>
         <main>
-          <FormFeaturesItems 
+          <FormFeatures
             features={FEATURES}
             selected={this.state.selected}
             updateFeature={this.updateFeature}
